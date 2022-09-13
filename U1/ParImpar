@@ -5,4 +5,5 @@ int main()
 {
     cout <<"Par o Impar" <<endl<<"\n";
     return O;
+    
 }
