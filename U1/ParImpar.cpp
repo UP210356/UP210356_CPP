@@ -4,6 +4,6 @@ using namespace std;
 int main()
 {
     cout <<"Par o Impar" <<endl<<"\n";
-    return O;
-    
+    return 0;
+    getchar ();
 }
