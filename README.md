@@ -75,3 +75,22 @@ width='600'/>
 http://ww.jdlisjalkjdsh.com
 > [DDA](https://www.DDA.com.mx)
 
+# U1
+
+```
+[
+    int entero = 28970983928;
+    float flotante = 3.321;
+    double grande = 5.7665764534;
+    char caracter ='L';
+
+    cout << "Este progrma muestra los tipos de datos- \n";
+    cout << "El número entero es: "<< entero << endl;
+    cout << "El tamaño del entero es: " <sizeof(entero) < "bytes" <<endl;
+
+
+   getchar();
+   return 0;
+]
+```
+
