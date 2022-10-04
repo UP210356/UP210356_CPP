@@ -77,6 +77,7 @@ http://ww.jdlisjalkjdsh.com
 
 # U1
 
+*Tipos Datos*
 ```
 [
     int entero = 28970983928;
@@ -93,9 +94,7 @@ http://ww.jdlisjalkjdsh.com
    return 0;
 ]
 ```
-
-# U2
-
+---
 *Edades*
  ```
  {
@@ -128,5 +127,6 @@ http://ww.jdlisjalkjdsh.com
 
     return 0;
 }
-```
----
+# U2
+
+
