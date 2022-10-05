@@ -1,17 +1,54 @@
 # U1   
 ---
-*Hola*   
+**Hola**   
 ```
-
+{
+    cout << "Hola Mundo";
+    return 0;
+}
 ```
 ---
-*Edades*   
+**Edades**   
 ```
+{
+    int e;
+    cout << "¿Cuál es tu edad? ";
+    cin >> e;
+    if (1 <= e && e <= 150)
+    {
+        if (e>=1 && e<=30)
+        {
+            cout << "Primera Edad ";
+        } 
+        else if (e>=31 && e<=60)
+        {
+            cout << "Segunda Edad";
+        } 
+        else if (e>=61 && e<=90)
+        {
+            cout << "Tercera Edad";
+        } 
+        else if (e>=91 && e<=150)
+        {
+            cout << "Horas Extra";
+        }
+    }
+    else
+    {
+        cout << "El rango es inváldo" << endl;
+    }
 
+    return 0;
+}
 ```
+*Entrada*
+
+*Proceso*
+
+*Salida*
 
 ---
-ParImpar*   
+**ParImpar**   
 ```
 {
     cout <<"Par o Impar" <<endl<<"\n";
@@ -19,11 +56,21 @@ ParImpar*
     getchar ();
 }
 ```
+*Entrada*
+
+*Proceso*
+
+*Salida*
 
 ---
-*Ciclos*   
+**Ciclos**   
 ```
 
 ```
+*Entrada*
+
+*Proceso*
+
+*Salida*
 
 ---
