@@ -5,12 +5,12 @@ using namespace std;
 int main()
 {
     //Ciclo for
-    int n=5;
+    int n=1;
     int r;
     for (int i = 1; i <= 10; i++)
     {
         r = n*i;
-        cout <<"El resultado de la multiplicación de %d y %d es: %d", &i, &n, &r;
+        cout << "El resultado de la multiplicación de %d y %d es: %d \n", &i, &n, &r;
 
     }
     
