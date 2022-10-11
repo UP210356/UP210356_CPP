@@ -1,6 +1,6 @@
 # U1   
 ---
-**Hola**   
+**01Hola**   
 ```
 {
     cout << "Hola Mundo";
@@ -8,7 +8,64 @@
 }
 ```
 ---
-**Edades**   
+**02ParImpar**   
+```
+{
+    cout <<"Par o Impar" <<endl<<"\n";
+    return 0;
+    getchar ();
+}
+```
+*Entrada*
+
+*Proceso*
+
+*Salida*
+
+---
+**03TiposDatos**   
+```
+{
+    int entero = 28970983928;
+    float flotante = 3.321;
+    double grande = 5.7665764534;
+    char caracter ='L';
+
+    cout << "Este progrma muestra los tipos de datos- \n";
+    cout << "El número entero es: "<< entero << endl;
+    cout << "El tamaño del entero es: " <sizeof(entero) < "bytes" <<endl;
+
+
+   getchar();
+   return 0;
+}
+```
+---
+**04Scanf**   
+```
+{
+    int s = 0;
+    int n = 10;
+    for (int i = 1; i <= n; i++)
+    {
+        if (i != 3)
+        {
+            printf("Contador %d \n", i);
+        }
+        s = s + i;
+    }
+    printf("El resultado de la suma de %d numeros es %d \n", n, s);
+    return 0;
+}
+```
+*Entrada*
+
+*Proceso*
+
+*Salida*
+
+---
+**05Edades**   
 ```
 {
     int e;
@@ -41,36 +98,3 @@
     return 0;
 }
 ```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
----
-**ParImpar**   
-```
-{
-    cout <<"Par o Impar" <<endl<<"\n";
-    return 0;
-    getchar ();
-}
-```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
----
-**Ciclos**   
-```
-
-```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
----
