@@ -1,6 +1,6 @@
 # U2  
 ---
-*E01Tramos*   
+*01Tramos*   
 ```
 {
     int renta;
@@ -41,7 +41,43 @@
 *Salida*
 
 ---
-*E02EmpresaRendimiento*   
+*02Personas*   
+```
+{
+    float p, s;
+    cout << "Escribe la puntuación del nivel (0.0, 0.4 y 0.6 o más)\n";
+    cin >> p;
+    if (p == 0.0 || p == 0.4 || p >= 0.6)
+    {
+        if (p == 0.0)
+        {
+            cout << "El nivel de rendimiento es inaceptable\n";
+        }
+        else if (p == 0.4)
+        {
+            cout << "El nivel de rendimiento es aceptable\n";
+        }
+        else if (p >= 0.6)
+        {
+            cout << "El nivel de rendimiento es meritorio\n";
+        }
+        s = p * 2400;
+        cout << "La cantidad de dinero que recibirá seá de " << s << endl;
+    }
+    else
+    {
+        cout << "Ingresa un dato válido\n";
+    }
+}
+```
+*Entrada*
+
+*Proceso*
+
+*Salida*
+
+---
+*03*   
 ```
 
 ```
@@ -52,7 +88,93 @@
 *Salida*
 
 ---
-*E03Tablas*   
+*04Pizzería*   
+```
+{
+    char Tipo, ingrediente;
+    cout << "Dime qué tipo de pizza gustas \n";
+    cout << "Escribe v si es vegetariana o n si no es vegetariana \n";
+    cin >> Tipo;
+    if (Tipo = 'v')
+    {
+        cout << "Los ingredientes vegetarianos son pimiento y tofu \n";
+        cout << "Escribe si prefieres pimiento o tofu: ";
+        cin >> ingrediente;
+        cout << "El tipo de pizza es vegetariana y el ingrediente es " << ingrediente << endl;
+    }
+    else if (Tipo = 'n')
+    {
+        cout << "Los ingredientes no vegetarianos son peperoni, jamón y salmón";
+        cout << "Escribe si prefieres peperoni, jamón o salmón";
+        cout << "El tipo de pizza es no vegetariana y el ingrediente es " << ingrediente << endl;
+    }
+    else
+    {
+        cout << "Escribir un tipo de pizza válido";
+    }
+}
+```
+*Entrada*
+
+*Proceso*
+
+*Salida*
+
+---
+*05Temperatura*   
+```
+{
+    float t, s, p, max, min;
+    for (int i=0; i<6; i++)
+    {
+        cout<<"Ingrese la temperatura: \n";
+        cin>>t;
+        s=s+t;
+        if (min>t)
+        {
+            min=t;
+        }
+        if (max<t)
+        {
+            max=t;
+        }
+    }
+    p=t/6
+    cout<<"El promedio de las temperaturas es: "<< p <<" grados \n";
+    cout<<"La temperatura más baja es: "<< min <<" grados \n";
+    cout<<"La temperatura más alta es: "<< max <<" grados \n";
+}
+```
+*Entrada*
+
+*Proceso*
+
+*Salida*
+
+---
+*06Precios*   
+```
+
+```
+*Entrada*
+
+*Proceso*
+
+*Salida*
+
+---
+*07Conversión*   
+```
+
+```
+*Entrada*
+
+*Proceso*
+
+*Salida*
+
+---
+*E01Tablas*   
 ```
 {
     //Ciclo for
@@ -68,54 +190,3 @@
     return 0;
 }
 ```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
----
-*E04Pizzería*   
-```
-
-```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
----
-*E05Temperatura*   
-```
-
-```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
----
-*E06Precios*   
-```
-
-```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
----
-*E07Conversión*   
-```
-
-```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
----
