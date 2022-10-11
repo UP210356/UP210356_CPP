@@ -7,6 +7,7 @@
     return 0;
 }
 ```
+![Hola Mundo](/U1/Imágenes/Hola Mundo.png)
 ---
 **02ParImpar**   
 ```
@@ -16,12 +17,7 @@
     getchar ();
 }
 ```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
+![ParImpar](/U1/Imágenes/ParImpar.png)
 ---
 **03TiposDatos**   
 ```
@@ -58,12 +54,7 @@
     return 0;
 }
 ```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
+![Contador](/U1/Imágenes/Contador.png)
 ---
 **05Edades**   
 ```
@@ -98,3 +89,4 @@
     return 0;
 }
 ```
+![Edades](/U1/Imágenes/Edades.png)

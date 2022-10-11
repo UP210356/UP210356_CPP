@@ -18,7 +18,7 @@ int main()
             max=t;
         }
     }
-    p=t/6
+    p=t/6;
     cout<<"El promedio de las temperaturas es: "<< p <<" grados \n";
     cout<<"La temperatura más baja es: "<< min <<" grados \n";
     cout<<"La temperatura más alta es: "<< max <<" grados \n";
