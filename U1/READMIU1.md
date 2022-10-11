@@ -7,7 +7,7 @@
     return 0;
 }
 ```
-![Hola Mundo](/U1/Imágenes/Hola Mundo.png)
+![Hola](/U1/Imágenes/Hola.png)
 ---
 **02ParImpar**   
 ```
