@@ -190,3 +190,8 @@
     return 0;
 }
 ```
+*Entrada*
+
+*Proceso*
+
+*Salida*
