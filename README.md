@@ -6,6 +6,18 @@
 Hola  
 Bienvenido a Programación
 
+**U1** 
+1. 
+
+git config --global -l
+git config --global user.name "UP210356"
+git config --global user.email "up210356@alumnos.upa.edu.mx"
+
+git clone (Link del repositorio)
+git add .
+git commit
+git push
+
 # Linea de encabezado   
 **Texto en negritas**   
 *Texto en cursiva*   
