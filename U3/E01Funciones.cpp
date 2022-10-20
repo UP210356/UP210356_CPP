@@ -34,6 +34,22 @@ double Ec2(double x)
     y = pow(e, -x) + 4 * pow(x, 3) - 5;
     return y;
 }
+string camello(string x)
+{
+    int lon = x.length();
+    for (int i = 0; i < lon; i++)
+    {
+        if (islower(x[i]))
+        {
+            x[i = toupper(x[i])];
+        } else 
+        {
+            x[i] = tolower(x[i]);
+        }
+    }
+    
+}
+
 
 int main()
 {
@@ -56,5 +72,9 @@ int main()
         x = Ec2(i);
         cout << "\n El resultado es: " << x;
     }
+
+    string res = camello("Upa");
+    cout << res << endl;
+    
     return 0;
 }
