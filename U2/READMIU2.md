@@ -39,30 +39,31 @@
 *02Personas*   
 ```
 {
-    float p, s;
-    cout << "Escribe la puntuación del nivel (0.0, 0.4 y 0.6 o más)\n";
-    cin >> p;
-    if (p == 0.0 || p == 0.4 || p >= 0.6)
+    float p;
+    int n;
+    printf("¿Cual es tu puntuacion? \n");
+    scanf("%f", &p);
+
+    if (p == 0.0f || p == 0.4f || p >= 0.6f)
     {
-        if (p == 0.0)
+        if (p == 0.0f)
         {
-            cout << "El nivel de rendimiento es inaceptable\n";
+            n = 2400 * 0.0f;
+            printf("Tu nivel es Inaceptable y recibiras %d $ \n", n);
         }
-        else if (p == 0.4)
+        else if (p == 0.4f)
         {
-            cout << "El nivel de rendimiento es aceptable\n";
+            n = 2400 * 0.4f;
+            printf("Tu nivel es Aceptable y recibiras %d $ \n", n);
         }
-        else if (p >= 0.6)
+        else if (p >= 0.6f)
         {
-            cout << "El nivel de rendimiento es meritorio\n";
+            n = 2400 * p;
+            printf("Tu nivel es Meritorio y recibiras %d $ \n", n);
         }
-        s = p * 2400;
-        cout << "La cantidad de dinero que recibirá seá de " << s << endl;
     }
-    else
-    {
-        cout << "Ingresa un dato válido\n";
-    }
+
+    return 0;
 }
 ```
 ![Personas](/U2//Im%C3%A1genes/02.jpg)
