@@ -201,4 +201,4 @@
     return 0;
 }
 ```
-![Conversion](/U1/Imágenes/ParImpar.png)
+![Conversion](/Descargas/07.png)
