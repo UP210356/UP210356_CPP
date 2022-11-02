@@ -167,8 +167,8 @@
     }
     p=t/6
     cout<<"El promedio de las temperaturas es: "<< p <<" grados \n";
-    cout<<"La temperatura más baja es: "<< min <<" grados \n";
-    cout<<"La temperatura más alta es: "<< max <<" grados \n";
+    cout<<"La temperatura minima es: "<< min <<" °C \n";
+    cout<<"La temperatura maxima es: "<< max <<" °C \n";
 }
 ```
 ![Conversion](/U2//Im%C3%A1genes/05.png)
