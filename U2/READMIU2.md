@@ -180,17 +180,21 @@
 *06Precios*   
 ```
 {
-    int d, c;
-    float p, s;
-    cout<<"Ingrese la cantidad de productos \n";
-    cin>>c;
-  do
+    double compras=1,total=0, cant, subtotal;
+    while (compras!=0)
     {
-        cout<<"Ingrese el precio del producto \n";
-        cin>>p;
-        s=s+p;
-    } while (c!=0);
-    cout<<"El total a pagar es: "<<s;
+        cout<<"Ingrese el precio de su articulo";
+        cin>>compras;
+        if(compras!=0)
+        {
+          cout<<"Cuantos articulos de estos lleva?";
+        cin>>cant;  
+        }
+        subtotal=compras*cant;
+        total=subtotal+total;
+    }
+    cout<<"su total es de: $"<<total;
+    return 0;
 }
 ```
 ![Conversion](/U2//Im%C3%A1genes/06.png)
