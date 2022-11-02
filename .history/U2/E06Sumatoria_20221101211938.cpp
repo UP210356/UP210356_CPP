@@ -9,6 +9,6 @@ int main()
         s = s + n;
         n++;
     }
-    cout << "Su total es de: " << s << endl;
+    cout << "La sumaroria es: " << s << endl;
     return 0;
 }
