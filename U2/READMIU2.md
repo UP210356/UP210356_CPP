@@ -74,28 +74,25 @@
 {
     int e;
     char op;
-    cout<<"Ingrese la edad del cliente \n";
-    cin>>e;
-    if (e>0 && e<100)
+    do
     {
+        cout << "Ingrese la edad del cliente"<<endl;
+        cin>>e;
         if (e<4)
         {
-        cout<<"La entrada es gratis \n";
-        }
-        else if (e<=18)
-        {
-            cout<<"La entrada cuesta $5 \n";
-        }
-        else if (e>18)
-        {
-            cout<<"La entrada cuesta $10 \n";
-        }
-    }
-    else
-    {
-        cout<<"Ingresa una edad válida \n";
-    }
-        
+            cout<<"La entrada es gratis"<<endl;
+        }else 
+            if (e<=18)
+            {
+                cout<<"La entrada cuesta $5"<<endl;
+            }else
+            {
+                cout<<"La entrada cuesta $10"<<endl;
+            }
+        cout<<"¿Desea hacer otra consulta? (s/n)"<<endl;
+        cin>>op;
+    } while (op=='s');   
+    return 0;
 }
 ```
 ![Conversion](/U2//Im%C3%A1genes/03.png)
