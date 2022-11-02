@@ -9,27 +9,27 @@
     cin >> renta;
     if (renta < 10000)
     {
-        cout << "El impuesto que pagarás será de 5%";
+        cout << "El impuesto es del 5%";
     }
     else if (renta>=10000 && renta<20000)
     {
-        cout << "El impuesto que pagarás será de 5%";
+        cout << "El impuesto es del 5%";
     }
     else if (renta>=20000 && renta<35000)
     {
-        cout << "El impuesto que pagarás será de 15%";
+        cout << "El impuesto es del 15%";
     }
     else if (renta>=35000 && renta<60000)
     {
-        cout << "El impuesto que pagarás será de 20%";
+        cout << "El impuesto es del 20%";
     }
     else if (renta>=35000 && renta<60000)
     {
-        cout << "El impuesto que pagarás será de 30%";
+        cout << "El impuesto es del 30%";
     }
     else if (renta>=60000)
     {
-        cout << "El impuesto que pagarás será de 45%";
+        cout << "El impuesto es del 45%";
     }
     return 0;
 }
