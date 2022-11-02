@@ -99,28 +99,50 @@
 ---
 *04Pizzería*   
 ```
-{
-    char Tipo, ingrediente;
-    cout << "Dime qué tipo de pizza gustas \n";
-    cout << "Escribe v si es vegetariana o n si no es vegetariana \n";
-    cin >> Tipo;
-    if (Tipo = 'v')
-    {
-        cout << "Los ingredientes vegetarianos son pimiento y tofu \n";
-        cout << "Escribe si prefieres pimiento o tofu: ";
-        cin >> ingrediente;
-        cout << "El tipo de pizza es vegetariana y el ingrediente es " << ingrediente << endl;
-    }
-    else if (Tipo = 'n')
-    {
-        cout << "Los ingredientes no vegetarianos son peperoni, jamón y salmón";
-        cout << "Escribe si prefieres peperoni, jamón o salmón";
-        cout << "El tipo de pizza es no vegetariana y el ingrediente es " << ingrediente << endl;
-    }
-    else
-    {
-        cout << "Escribir un tipo de pizza válido";
-    }
+{ 
+   string ingr;
+   string sabor = "Mozzarela, Tomate y "; 
+   string extr; 
+   cout << "Cómo quieres tu pizza: " <<endl; 
+   cout << "Vegetariana" <<endl; 
+   cout << "No Vegetariana" <<endl;
+   cin >> ingr;
+   if (ingr == "Vegetariana")
+   {
+       cout << "Elige tu ingrediente Vegetariano: " <<endl; 
+       cout << "- Tofu" <<endl; 
+       cout << "- Pimiento" <<endl;
+       cin >> extr; 
+       if (extr == "Tofu")
+       {
+           sabor = sabor + "Tofu"; 
+       } else {
+           sabor = sabor + "Pimiento";
+       }
+       cout << "Tu pizza es " << ingr << " con " << sabor <<endl;
+   } else if (ingr == "NoVegetariana") {
+   { 
+       cout << "Elige tu ingrediente No Vegetariano: " <<endl; 
+       cout << "- Peperoni" <<endl; 
+       cout << "- Jamon" <<endl;
+       cout << "- Salmon" <<endl;
+       cin >> extr;
+       if (extr == "Peperoni")
+       {
+           sabor = sabor + "Peperoni"; 
+       } else 
+       { if (extr == "Jamon")
+       {
+           sabor = sabor + "Jamon";
+       } else 
+       {
+           sabor = sabor + "Salmon";
+       }
+       }
+       cout << "Tu pizza es " << ingr << " con " << sabor <<endl;
+   }
+   }
+   return 0;
 }
 ```
 ![Conversion](/U2//Im%C3%A1genes/04.png)
