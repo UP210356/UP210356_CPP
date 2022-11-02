@@ -194,7 +194,7 @@
 *07Conversión*   
 ```
 {
-    int numro;
+    int numero;
     string res;
     cout << "Ingrese el número binario a convertir: ";
     cin >> numero; 
@@ -208,7 +208,7 @@
 
                 numero /= 2;
             }
-    cout << "El número en binario es: " << res << endl;
+    cout << "El número " << número << "es: " << res << endl;
         }
         else if (numero == 0)
         {
