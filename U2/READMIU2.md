@@ -208,7 +208,7 @@
 
                 numero /= 2;
             }
-    cout << "El número " << número << "es: " << res << endl;
+    cout << "El número " << número << "en decimal es: " << res << endl;
         }
         else if (numero == 0)
         {
