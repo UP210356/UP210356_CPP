@@ -20,6 +20,6 @@ int main()
     }
     p=t/6;
     cout<<"El promedio de las temperaturas es: "<< p <<" grados \n";
-    cout<<"La temperatura minima es: "<< min <<" grados \n";
-    cout<<"La temperatura maxima es: "<< max <<" grados \n";
+    cout<<"La temperatura minima es: "<< min <<" ° \n";
+    cout<<"La temperatura maxima es: "<< max <<" ° \n";
 }
