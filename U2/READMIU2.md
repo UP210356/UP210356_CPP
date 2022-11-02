@@ -3,34 +3,38 @@
 *01Tramos*   
 ```
 {
-    int renta;
-    int impuesto;
-    cout << "Ingresa tu renta anual";
+    int renta, desc, impuesto;
+    cout << "Ingresa tu renta anual" << endl;
     cin >> renta;
+
     if (renta < 10000)
     {
         cout << "Tu impuesto es del 5%";
+        desc = 5;
     }
-    else if (renta>=10000 && renta<20000)
+    else if (renta <= 20000)
     {
-        cout << "Tu impuesto es del 5%";
+        cout << "Tu impuesto es del 10%";
+        desc = 10;
     }
-    else if (renta>=20000 && renta<35000)
+    else if (renta <= 35000)
     {
         cout << "Tu impuesto es del 15%";
+        desc = 15;
     }
-    else if (renta>=35000 && renta<60000)
-    {
-        cout << "Tu impuesto es del 20%";
-    }
-    else if (renta>=35000 && renta<60000)
+    else if (renta <= 60000)
     {
         cout << "Tu impuesto es del 30%";
+        desc = 30;
     }
-    else if (renta>=60000)
+    else if (renta > 60000)
     {
         cout << "Tu impuesto es del 45%";
+        desc = 45;
     }
+    impuesto = renta * desc / 100;
+    cout << " \n Debes de pagar: $ " << impuesto << endl;
+    
     return 0;
 }
 ```
