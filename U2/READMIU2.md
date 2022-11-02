@@ -34,12 +34,7 @@
     return 0;
 }
 ```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
+![Tramos](/U1/Imágenes/ParImpar.png)
 ---
 *02Personas*   
 ```
@@ -70,12 +65,7 @@
     }
 }
 ```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
+![Persona](/U1/Imágenes/ParImpar.png)
 ---
 *03Juegos*   
 ```
@@ -106,12 +96,7 @@
         
 }
 ```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
+![Juegos](/U1/Imágenes/ParImpar.png)
 ---
 *04Pizzería*   
 ```
@@ -139,12 +124,7 @@
     }
 }
 ```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
+![Pizzería](/U1/Imágenes/ParImpar.png)
 ---
 *05Temperatura*   
 ```
@@ -170,12 +150,7 @@
     cout<<"La temperatura más alta es: "<< max <<" grados \n";
 }
 ```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
+![Temperatura](/U1/Imágenes/ParImpar.png)
 ---
 *06Precios*   
 ```
@@ -193,65 +168,37 @@
     cout<<"El total a pagar es: "<<s;
 }
 ```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
+![Precios](/U1/Imágenes/ParImpar.png)
 ---
 *07Conversión*   
 ```
-
-```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
----
-*E01Tablas*   
-```
 {
-    //Ciclo for
-    int n=5;
-    int r;
-    for (int i = 1; i <= 10; i++)
+    int numro;
+    string res;
+    cout << "Ingrese el número binario a convertir: ";
+    cin >> numero; 
+    do
     {
-        r = n*i;
-        cout <<"El resultado de la multiplicación de %d y %d es: %d", &i, &n, &r;
-
-    }
-    
-    return 0;
-}
-```
-*Entrada*
-
-*Proceso*
-
-*Salida*
-
----
-*E02ForFor*   
-```
-{
-    int r;
-    for (int i = 1; i <= 10; i++)
-    {
-
-        for (int n = 1; n <= 10; n++)
+        if (numero > 0)
         {
-            r = n * i;
-            printf("El resultado de la multiplicación de %d y %d es: %d \n", i, n, r);
+            while (numero != 0)
+            {
+                res = (numero % 2 == 0) ? "0" + res : "1" + res;
+
+                numero /= 2;
+            }
+    cout << "El número en binario es: " << res << endl;
         }
-    }
+        else if (numero == 0)
+        {
+        cout << "Por favor introducir un número mayor a 0" <<endl;
+        }
+
+        // Line break
+        cout << "\n";
+    } while (numero < 0);
+
     return 0;
 }
 ```
-*Entrada*
-
-*Proceso*
-
-*Salida*
+![Conversion](/U1/Imágenes/ParImpar.png)
