@@ -5,7 +5,7 @@
 {
     int renta;
     int impuesto;
-    cout << "¿Cuánto pagas de renta? ";
+    cout << "Ingresa tu renta anual";
     cin >> renta;
     if (renta < 10000)
     {
