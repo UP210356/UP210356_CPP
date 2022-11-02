@@ -17,7 +17,7 @@ int main()
 
                 numero /= 2;
             }
-    cout << "E lnúmero en binario es: " << res << endl;
+    cout << "El número en binario es: " << res << endl;
         }
         else if (numero == 0)
         {
