@@ -5,7 +5,7 @@ int main()
 {
     int numro;
     string res;
-    cout << "Depositar un número en decimal: ";
+    cout << "Ingrese el número binario a convertir: ";
     cin >> numero; 
     do
     {
