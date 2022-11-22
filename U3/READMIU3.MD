@@ -296,9 +296,8 @@ int main()
     return 0;
 }
 ```
-![Ascendente](/U3//Im%C3%A1genes/08.png)
-Este método ordena los números dados de menor a mayor, si el número es menor pasa a la primera   
-posición utilizando el array
+![Ascendente](/U3//Im%C3%A1genes/08.png)   
+Este método ordena los números dados de menor a mayor, si el número es menor pasa a la primera posición utilizando el array
 ---
 *09Recursiva*   
 ```
@@ -320,6 +319,5 @@ int factorial(int n)
     return 1; // Condición para n == 1 y n == 0
 }
 ```
-![Recursiva](/U3//Im%C3%A1genes/09.png)
-Esta fucion recursiva para numeros negativos devuelve 0, para el 0 y 1 devuelve 1 y para los demas   
-aplica la recursividad multiplicando como normalmente se sacaria el factorial   
+![Recursiva](/U3//Im%C3%A1genes/09.png)   
+Esta fucion recursiva para numeros negativos devuelve 0, para el 0 y 1 devuelve 1 y para los demas aplica la recursividad multiplicando como normalmente se sacaria el factorial   
