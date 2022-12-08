@@ -1,9 +1,36 @@
 #include <stdio.h>
+#include <iostream>
+using namespace std;
+
+char matriz[3][3];
+int i, j, f, c, t = 1;
+
+int ganador(int x)
+{
+    int g = 0;
+    if (matriz[0][0] == 'x' && matriz[0][1] == 'x' && matriz[0][2] == 'x' || matriz[1][0] == 'x' && matriz[1][1] == 'x' && matriz[1][2] == 'x' || matriz[2][0] == 'x' && matriz[2][1] == 'x' && matriz[2][2] == 'x'
+
+            || matriz[0][0] == 'x' && matriz[1][0] == 'x' && matriz[2][0] == 'x' || matriz[0][1] == 'x' && matriz[1][1] == 'x' && matriz[2][1] == 'x' || matriz[0][2] == 'x' && matriz[1][2] == 'x' && matriz[2][2] == 'x'
+
+            || matriz[0][0] == 'x' && matriz[1][1] == 'x' && matriz[2][2] == 'x' || matriz[0][2] == 'x' && matriz[1][1] == 'x' && matriz[2][0] == 'x')
+        {
+            g = 1;
+            printf("Gano el jugador 1\n");
+        }
+        if (matriz[0][0] == 'o' && matriz[0][1] == 'o' && matriz[0][2] == 'o' || matriz[1][0] == 'o' && matriz[1][1] == 'o' && matriz[1][2] == 'o' || matriz[2][0] == 'o' && matriz[2][1] == 'o' && matriz[2][2] == 'o'
+
+            || matriz[0][0] == 'o' && matriz[1][0] == 'o' && matriz[2][0] == 'o' || matriz[0][1] == 'o' && matriz[1][1] == 'o' && matriz[2][1] == 'o' || matriz[0][2] == 'o' && matriz[1][2] == 'o' && matriz[2][2] == 'o'
+
+            || matriz[0][0] == 'o' && matriz[1][1] == 'o' && matriz[2][2] == 'o' || matriz[0][2] == 'o' && matriz[1][1] == 'o' && matriz[2][0] == 'o')
+        {
+            g = 1;
+            printf("Gano el jugador 2\n");
+        }
+        return g;
+}
 
 int main()
 {
-    char matriz[3][3];
-    int i, j, f, c, g = 0, t = 1;
     printf("Filas: 0, 1, 2\n");
     printf("Columnas: 0, 1, 2\n");
     do
@@ -13,13 +40,13 @@ int main()
             do
             {
                 printf("Jugador 1: \n");
-                printf("Digite la fila: \n");
+                printf("Fila: \n");
                 scanf("%d", &f);
-                printf("Digite la columna: \n");
+                printf("Columna: \n");
                 scanf("%d", &c);
                 if (matriz[f][c] == 'x' || matriz[f][c] == 'o' || f > 2 || c > 2)
                 {
-                    printf("Coordenadas no validas, pruebe otra vez\n");
+                    printf("No válido, ingresa otros datos\n");
                 }
             } while (matriz[f][c] == 'x' || matriz[f][c] == 'o' || f > 2 || c > 2);
             matriz[f][c] = 'x';
@@ -58,24 +85,6 @@ int main()
             }
             t++;
         }
-        if (matriz[0][0] == 'x' && matriz[0][0] == matriz[0][1] && matriz[0][0] == matriz[0][2] || matriz[1][0] == 'x' && matriz[1][0] == matriz[1][1] && matriz[1][0] == matriz[1][2] || matriz[2][0] == 'x' && matriz[2][0] == matriz[2][1] && matriz[2][0] == matriz[2][2]
-
-            || matriz[0][0] == 'x' && matriz[0][0] == matriz[1][0] && matriz[0][0] == matriz[2][0] || matriz[0][1] == 'x' && matriz[0][1] == matriz[1][1] && matriz[0][1] == matriz[2][1] || matriz[0][2] == 'x' && matriz[0][2] == matriz[1][2] && matriz[0][2] == matriz[2][2]
-
-            || matriz[0][0] == 'x' && matriz[0][0] == matriz[1][1] && matriz[0][0] == matriz[2][2] || matriz[0][2] == 'x' && matriz[0][2] == matriz[1][1] && matriz[0][2] == matriz[2][0])
-        {
-            g = 1;
-            printf("Gano el jugador 1\n");
-        }
-        if (matriz[0][0] == 'o' && matriz[0][0] == matriz[0][1] && matriz[0][0] == matriz[0][2] || matriz[1][0] == 'o' && matriz[1][0] == matriz[1][1] && matriz[1][0] == matriz[1][2] || matriz[2][0] == 'o' && matriz[2][0] == matriz[2][1] && matriz[2][0] == matriz[2][2]
-
-            || matriz[0][0] == 'o' && matriz[0][0] == matriz[1][0] && matriz[0][0] == matriz[2][0] || matriz[0][1] == 'o' && matriz[0][1] == matriz[1][1] && matriz[0][1] == matriz[2][1] || matriz[0][2] == 'o' && matriz[0][2] == matriz[1][2] && matriz[0][2] == matriz[2][2]
-
-            || matriz[0][0] == 'o' && matriz[0][0] == matriz[1][1] && matriz[0][0] == matriz[2][2] || matriz[0][2] == 'o' && matriz[0][2] == matriz[1][1] && matriz[0][2] == matriz[2][0])
-        {
-            g = 1;
-            printf("Gano el jugador 2\n");
-        }
-    } while (g != 1);
+    }while (ganador(0) != 1);
     return 0;
 }
